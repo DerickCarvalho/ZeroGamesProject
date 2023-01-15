@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500;700;800;900&display=swap');
+
+:root {
+    --font-principal: 'Alegreya Sans', sans-serif;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-principal);
+    color: #282828;
+}
+body {
+    background: url(../background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:auto;
+}
+.flex-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header img {
+    width: 200px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.formulario {
+    background: #FFFFFF;
+    width: 800px;
+    height: 400px;
+    border-radius: 20px;
+    border: 5px solid #004CBF;
+    margin: 0 10px;
+}
+form {
+    width: 50%;
+}
+.form_header {
+    padding-bottom: 5px;
+}
+.form_description {
+    width: 50%;
+}
+.form_description img {
+    width: 150px;
+}
+.form_description p {
+    margin-top: 20px;
+}
+.campTxt {
+    width: 90%;
+    font-size: 26px;
+    padding: 5px 15px;
+    margin: 5px 0;
+    border-radius: 10px;
+    border: 1px solid #545454;
+    outline: none;
+}
+.password {
+    margin: 5px 0;
+    border: 1px solid #545454;
+    width: 90%;
+    padding: 0 15px;
+    border-radius: 10px;
+}
+.password img {
+    width: 40px;
+    margin-left: 10px;
+    transition: linear transform 0.1s;
+}
+.password img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.campPassword {
+    width: 90%;
+    font-size: 26px;
+    margin: 5px 0;
+    border: 0;
+    outline: none;
+}
+.botaoLogin {
+    font-size: 20px;
+    font-weight: 800;
+    padding: 0 40px;
+    background: #30FF00;
+    border-radius: 10PX;
+    border: 3px solid #198700;
+    transition: linear transform 0.1s, box-shadow 0.3s;
+    margin-top: 20px;
+}
+.botaoLogin:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    box-shadow: 3px 3px 0px #363636;
+}
+.cadastro {
+    padding-top: 15px;
+}
+.credits {
+    padding-top: 10px;
+}
+
+@media (max-width: 550px) {
+    .form_description {
+        display: none;
+    }
+    form {
+        width: 100%;
+    }
+}
+@media (max-width: 320px) {
+    .form_header h1 {
+        font-size: 20px;
+    }
+    .campTxt {
+        font-size: 20px;
+    }
+}
